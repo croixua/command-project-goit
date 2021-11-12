@@ -1,0 +1,17 @@
+@mixin centred() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($fw: 500, $fz: 14px, $lh: 24px, $ls: 0.04em, $tt: none) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh / $fz;
+  letter-spacing: $ls;
+  text-transform: $tt;
+}
+
+//   @mixin transition($pr: color) {
+//     transition: $pr 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
