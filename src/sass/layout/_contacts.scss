@@ -95,13 +95,12 @@
   color: var(--main-text-color);
 }
 
-.contact-button-item:not(:last-child) {
-  margin-bottom: 10px;
+.contact-button__list {
 }
 
-.contact-button {
-  margin: 0 auto;
-  width: 161px;
-  height: 44px;
-  background-color: var(--primary-color);
+.contact-button__item {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
