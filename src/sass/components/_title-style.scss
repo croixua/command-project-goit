@@ -1,0 +1,12 @@
+.section__pretitle {
+  font-family: Titan One;
+  text-align: center;
+  @include font(400, 18px, 21px, 0.04em, uppercase);
+  color: var(--secondary-color);
+}
+.section__title {
+  text-align: center;
+  font-family: Titan One;
+  @include font(400, 34px, 39px, 0.04em, uppercase);
+  color: var(--primary-color);
+}
