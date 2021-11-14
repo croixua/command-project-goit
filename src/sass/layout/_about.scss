@@ -1,3 +1,14 @@
+.section__about {
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/desk/howit-bkg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/howit-bkg@1x.png');
+    }
+  }
+}
 .about__pretitle {
   font-family: Titan One, sans-serif;
   @include font($fw: 400, $fz: 18px, $lh: 21px, $ls: 0.04em, $tt: uppercase);
@@ -33,15 +44,6 @@
 .wrap__box {
   @media screen and (min-width: 768px) {
     display: flex;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url('../images/desk/howit-bkg@1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/desk/howit-bkg@1x.png');
-    }
   }
 }
 
