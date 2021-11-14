@@ -5,6 +5,9 @@
   height: 502px;
   background-color: #ffb8ca;
   background-image: url(../images/mob/slider-pic7@1x.png), url(../images/ellipse.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mob/slider-pic7@2x.png), url(../images/ellipse.png);
+  }
   background-position: right 32px bottom, right 83px;
   background-repeat: no-repeat;
 }
