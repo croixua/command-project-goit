@@ -67,24 +67,25 @@
   border-radius: 20px;
   border: 0px solid transparent;
   background-color: var(--primary-color);
+  &--left {
+    width: 83px;
+    padding: 7px 10px;
+
+    align-items: center;
+    text-align: center;
+
+    @include font($fw: 500, $fz: 8px, $lh: 10px, $ls: 0.04em, $tt: none);
+
+    color: var(--primary-color);
+
+    border-radius: 20px;
+    border: 0px solid transparent;
+    background-color: var(--third-color);
+  }
+  & {
+    margin-right: 8px;
+  }
 }
-
-.hero__button--left {
-  width: 83px;
-  padding: 7px 10px;
-
-  align-items: center;
-  text-align: center;
-
-  @include font($fw: 500, $fz: 8px, $lh: 10px, $ls: 0.04em, $tt: none);
-
-  color: var(--primary-color);
-
-  border-radius: 20px;
-  border: 0px solid transparent;
-  background-color: var(--third-color);
-}
-
 .hero__list {
   display: none;
 }
