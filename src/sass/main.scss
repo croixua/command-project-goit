@@ -13,6 +13,8 @@
 @import './base/common';
 // Components
 @import './components/container';
+@import './components/title-style';
+@import './components/section';
 // @import './components/btn';
 
 // @import './components/section-title';
@@ -23,7 +25,7 @@
 // @import './layout/header';
 // @import './layout/hero';
 // @import './layout/products';
-// @import './layout/advantages';
+@import './layout/advantages';
 // @import './layout/gallery';
 // @import './layout/customer-reviews';
 @import './layout/contacts';
