@@ -1,0 +1,133 @@
+.about__pretitle {
+  font-family: Titan One, sans-serif;
+  @include font($fw: 400, $fz: 18px, $lh: 21px, $ls: 0.04em, $tt: uppercase);
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    @include font($fw: 400, $fz: 26px, $lh: 30px, $ls: 0.04em, $tt: uppercase);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font($fw: 400, $fz: 30px, $lh: 34px, $ls: 0.04em, $tt: uppercase);
+  }
+}
+
+.about__title {
+  font-family: Titan One, sans-serif;
+  text-align: center;
+  color: var(--primary-color);
+  @include font($fw: 500, $fz: 34px, $lh: 39px, $ls: 0.04em, $tt: uppercase);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font($fw: 500, $fz: 48px, $lh: 55px, $ls: 0.04em, $tt: uppercase);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font($fw: 500, $fz: 58px, $lh: 55px, $ls: 0.04em, $tt: uppercase);
+    margin-bottom: 55px;
+  }
+}
+
+.wrap__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/desk/howit-bkg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/howit-bkg@1x.png');
+    }
+  }
+}
+
+.about__img {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
+  }
+}
+
+.wrap__box-text {
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
+.about__list {
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/mob/howit-bkg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mob/howit-bkg@2x.png');
+    }
+  }
+}
+
+.about__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    @include centred();
+  }
+}
+
+.about__text {
+  @include font($fw: 500, $fz: 12px, $lh: 19px);
+  @media screen and (max-width: 767px) {
+    width: 240px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font($fw: 500, $fz: 14px, $lh: 25px);
+    width: 350px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font($fw: 500, $fz: 14px, $lh: 27px);
+  }
+}
+.about--dark {
+  color: #000;
+}
+
+.wrap__btn {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    @include centred();
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 45px;
+  }
+}
+.about__btn {
+  width: 176px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18px / 14px);
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  background-color: #fff;
+  color: var(--primary-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-first-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--primary-color);
+  }
+}
