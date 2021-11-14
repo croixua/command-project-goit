@@ -1,0 +1,143 @@
+// button Header
+
+.button {
+  display: inline-block;
+  width: 209px;
+  padding: 12px 48.5px;
+  align-items: baseline;
+
+  @include font($fw: 700, $fz: 16px, $lh: 21px, $ls: 0.04em, $tt: none);
+
+  text-align: center;
+  color: var(--primary-color);
+
+  cursor: pointer;
+  border-radius: 22px;
+  border: 0px solid transparent;
+  background-color: var(--third-color);
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--accent-first-color);
+  }
+}
+
+.button__arrow {
+  fill: var(--primary-color);
+}
+
+.button__arrow--margin {
+  margin-left: 22px;
+}
+
+// button HERO
+
+.button__hero {
+  display: inline-block;
+  width: 63px;
+  padding: 7px 10px;
+
+  @include font($fw: 500, $fz: 8px, $lh: 10px, $ls: 0.04em, $tt: none);
+
+  align-items: center;
+  text-align: center;
+  color: var(--third-color);
+
+  border-radius: 20px;
+  border: 0px solid transparent;
+  background-color: var(--primary-color);
+}
+
+.button__hero--left {
+  width: 83px;
+  padding: 7px 10px;
+
+  align-items: center;
+  text-align: center;
+
+  @include font($fw: 500, $fz: 8px, $lh: 10px, $ls: 0.04em, $tt: none);
+
+  color: var(--primary-color);
+
+  border-radius: 20px;
+  border: 0px solid transparent;
+  background-color: var(--third-color);
+}
+
+//
+.button__products {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  align-items: baseline;
+
+  font-size: 8px;
+  line-height: 1.25;
+
+  border-radius: 50px;
+  border: 0px solid transparent;
+  background-color: var(--third-color);
+}
+
+// button About
+
+.button__about {
+  display: inline-block;
+
+  padding: 10px 37px;
+  width: 176px;
+  text-align: center;
+  align-items: baseline;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--primary-color);
+
+  cursor: pointer;
+
+  border-radius: 22px;
+  border: 0px solid transparent;
+  background-color: var(--third-color);
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--accent-first-color);
+  }
+}
+
+// button Contacts
+
+.button__contacts {
+  display: inline-block;
+  padding: 13px 17px;
+  width: 162px;
+  text-align: center;
+  align-items: baseline;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  cursor: pointer;
+
+  border-radius: 22px;
+  border: 0px solid transparent;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+
+  & .button__arrow {
+    fill: var(--third-color);
+  }
+  & .button__arrow--margin {
+    margin-left: 8px;
+  }
+}
+
+.button__contacts--white {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+  & .button__arrow {
+    fill: var(--primary-color);
+  }
+}
