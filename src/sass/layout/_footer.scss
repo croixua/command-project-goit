@@ -1,11 +1,9 @@
 .footer {
-  background-color: #fff5f6;
-  padding-top: 25px;
+  background-color: var(--main-background-color);
   padding-bottom: 25px;
 }
 
 .footer__contacts {
-  padding-top: 43px;
   padding-bottom: 43px;
   border-bottom: 1px solid #e1e1e1;
 }
@@ -17,9 +15,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(21 / 18);
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--secondary-color);
 }
 
 .title {
@@ -36,23 +34,40 @@
 }
 
 .social-list {
+  margin-bottom: 46px;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 46px;
+}
+
+.social-list__link {
+  @include centred;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fea5bb;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color);
+  }
 }
 
 .social-list__item {
-  margin-right: 28px;
+  margin-left: 28px;
+  width: 34px;
+  height: 34px;
+}
+
+.social-list__icon {
+  fill: var(--third-color);
 }
 
 .footer-tel {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 12);
   text-align: right;
-  color: #000000;
+  @include font(500, 12px, 22px, 0);
+  color: var(--minor-text-color);
 }
 
 .footer-tel__red {
@@ -62,12 +77,8 @@
 .footer-copyright {
   margin: 0 auto;
   margin-top: 22px;
-  width: 150px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(21 / 14);
+  width: 148px;
   text-align: center;
-  color: #907e82;
+  @include font(700, 14px, 21px, 0);
+  color: var(--main-text-color);
 }
