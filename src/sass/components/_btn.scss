@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
   width: 209px;
-  padding: 12px 48.5px;
+  padding: 12px 0;
   align-items: baseline;
 
   @include font($fw: 700, $fz: 16px, $lh: 21px, $ls: 0.04em, $tt: none);
@@ -35,7 +35,7 @@
 .button__hero {
   display: inline-block;
   width: 63px;
-  padding: 7px 10px;
+  padding: 7px 0;
 
   @include font($fw: 500, $fz: 8px, $lh: 10px, $ls: 0.04em, $tt: none);
 
@@ -50,7 +50,7 @@
 
 .button__hero--left {
   width: 83px;
-  padding: 7px 10px;
+  padding: 7px 0;
 
   align-items: center;
   text-align: center;
@@ -84,7 +84,7 @@
 .button__about {
   display: inline-block;
 
-  padding: 10px 37px;
+  padding: 10px 0;
   width: 176px;
   text-align: center;
   align-items: baseline;
@@ -110,7 +110,7 @@
 
 .button__contacts {
   display: inline-block;
-  padding: 13px 17px;
+  padding: 13px 0;
   width: 162px;
   text-align: center;
   align-items: baseline;
