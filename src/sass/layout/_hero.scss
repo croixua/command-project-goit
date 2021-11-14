@@ -7,6 +7,7 @@
   background-image: url(../images/mob/slider-pic7@1x.png), url(../images/ellipse.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/mob/slider-pic7@2x.png), url(../images/ellipse.png);
+    background-size: 171px 410px, auto;
   }
   background-position: right 32px bottom, right 83px;
   background-repeat: no-repeat;
@@ -17,8 +18,8 @@
   top: 40%;
 }
 .hero__title {
-  font-family: Titan One, sans-serif;
-  font-weight: 502px;
+  font-family: Titan One;
+  font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
   text-transform: uppercase;
@@ -28,7 +29,8 @@
 }
 
 .hero__title--second {
-  font-family: Titan One, sans-serif;
+  font-family: Titan One;
+  font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 0.96;
