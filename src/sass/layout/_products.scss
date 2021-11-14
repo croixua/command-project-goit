@@ -1,22 +1,29 @@
-.section__text {
+.section__pretitle {
   font-family: Titan One;
-  text-align: center;
   @include font(400, 18px, 21px, 0.04em, uppercase);
   color: var(--secondary-color);
-  margin-bottom: 15px;
-}
-.section__title {
   text-align: center;
+}
+
+.section__title {
   font-family: Titan One;
   @include font(400, 34px, 39px, 0.04em, uppercase);
   color: var(--primary-color);
+  text-align: center;
+}
+.section__pretitle--margin {
+  margin-bottom: 15px;
+}
+.section__title--margin {
   margin-bottom: 144px;
 }
 .products__thumb {
-  border-radius: 24px;
   position: relative;
   padding-bottom: 41px;
   padding-top: 161px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 24px;
 }
 
 .products__thumb--pink {
@@ -29,40 +36,33 @@
   background-color: #c2e297;
 }
 .products__title {
-  text-align: center;
+  margin-bottom: 66px;
   font-family: Titan One;
   @include font(400, 20px, 23px, 0.04em, uppercase);
   color: var(--third-color);
-
-  &::after {
-    content: '';
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-image: url('../images/Ellipse.svg');
-    background-repeat: repeat-x;
-    width: 23px;
-    height: 6px;
-    background-repeat: space;
-  }
+  text-align: center;
 }
 .products__text {
-  text-align: center;
-  @include font(400, 14px, 21px, 0.04em);
-  color: var(--third-color);
   margin-bottom: 30px;
+  @include font(700, 14px, 21px, 0.04em);
+  color: var(--third-color);
+  text-align: center;
+  &::before {
+    content: '•••';
+    display: block;
+    font-size: 20px;
+    transform: translateY(-30px);
+  }
 }
 .products__thumb--pink::before {
+  content: '';
   position: absolute;
   top: -113px;
   left: 50%;
-  transform: translate(-50%) scale(1);
-  content: '';
   width: 249px;
   height: 252px;
   background-size: 249px 252px;
+  transform: translate(-50%) scale(1);
   background-image: url('../images/mob/products-cream@1x.png');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -74,14 +74,14 @@
   }
 }
 .products__thumb--coffee::before {
+  content: '';
   position: absolute;
   top: -113px;
   left: 50%;
-  transform: translate(-50%) scale(1);
-  content: '';
   width: 249px;
   height: 252px;
   background-size: 249px 252px;
+  transform: translate(-50%) scale(1);
   background-image: url('../images/mob/products-coffee@1x.png');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -93,14 +93,14 @@
   }
 }
 .products__thumb--green::before {
+  content: '';
   position: absolute;
   top: -113px;
   left: 50%;
-  transform: translate(-50%) scale(1);
-  content: '';
   width: 249px;
   height: 252px;
   background-size: 249px 252px;
+  transform: translate(-50%) scale(1);
   background-image: url('../images/mob/products-milk@1x-2.png');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -116,9 +116,9 @@
   display: block;
   width: 40px;
   height: 40px;
-  background-color: aqua;
   margin-left: auto;
   margin-right: auto;
+  background-color: aqua;
 }
 .products__item {
   margin-bottom: 130px;
