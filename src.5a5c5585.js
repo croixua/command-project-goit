@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/mob/products-cream@1x.png":[["products-cream@1x.8c20f063.png","U8D0"],"U8D0"],"./../images/mob/products-cream@2x.png":[["products-cream@2x.c4b544af.png","pINM"],"pINM"],"./../images/mob/products-coffee@1x.png":[["products-coffee@1x.2e4982d1.png","Hklr"],"Hklr"],"./../images/mob/products-coffee@2x.png":[["products-coffee@2x.f0dd2827.png","R4sB"],"R4sB"],"./../images/mob/products-milk@1x-2.png":[["products-milk@1x-2.5ddf3f2b.png","sShW"],"sShW"],"./../images/mob/products-milk@2x-2.png":[["products-milk@2x-2.913938d6.png","st0d"],"st0d"],"./../images/icon/icon1@1x.png":[["icon1@1x.3898bbfc.png","kOcJ"],"kOcJ"],"./../images/icon/icon2@1x.png":[["icon2@1x.7b20a05f.png","yD8n"],"yD8n"],"./../images/icon/icon3@1x.png":[["icon3@1x.b01e9198.png","phxA"],"phxA"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/command-project-goit/src.f5a21396.js.map
+//# sourceMappingURL=/command-project-goit/src.5a5c5585.js.map
