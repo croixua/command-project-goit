@@ -15,19 +15,17 @@
 @import './components/container';
 @import './components/title-style';
 @import './components/section';
-// @import './components/btn';
+@import './components/btn';
 
 // @import './components/section-title';
 @import './components/section';
-
-// @import './components/header-menu';
+@import './components/header-menu';
 // Layout
-
-// @import './layout/header';
-// @import './layout/hero';
-// @import './layout/products';
+@import './layout/products';
+@import './layout/header';
+@import './layout/hero';
 @import './layout/advantages';
 // @import './layout/gallery';
 @import './layout/customer-reviews';
-// @import './layout/contacts';
-// @import './layout/footer';
+@import './layout/contacts';
+@import './layout/footer';
