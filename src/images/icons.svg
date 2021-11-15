@@ -50,5 +50,10 @@
             <path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)"
                 d="M33.053 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
         </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 22 32">
+            <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round"
+                stroke-linecap="round" stroke-width="6.4" d="M18.245 28.8 4.545 16l13.7-12.8" />
+        </symbol>
+
     </defs>
 </svg>

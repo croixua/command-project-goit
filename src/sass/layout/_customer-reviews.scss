@@ -34,22 +34,22 @@
 .customer-reviews__content {
   position: relative;
   margin-bottom: 55px;
-  padding: 0 10px;
+  padding: 3px 10px;
 
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
-    transparent 30px,
+    transparent 28px,
     #e1e1e1 31px
   );
-  border-bottom: 1px solid #e1e1e1;
+  /*border-bottom: 2px solid #e1e1e1;*/
 
   @media screen and (min-width: 768px) {
-    padding: 0 20px;
+    padding: 2px 20px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 0 30px;
+    padding: 2px 30px;
   }
 }
 
@@ -62,7 +62,8 @@
   height: 40px;
 
   content: '';
-  background-image: url('../images/quotes.png');
+  background-image: url('../images/quotes.svg');
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
     top: -15px;
@@ -88,10 +89,12 @@
   left: 50%;
   transform: translateX(-50%);
   content: '';
-  width: 32px;
+  width: 30px;
   height: 4px;
-  background-image: url('../images/3dots.png');
+  background-image: url('../images/3dots.svg');
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: 50% 50%;
 }
 
 .customer-reviews__text {
@@ -135,4 +138,42 @@
 
 .customer-reviews__symbols-fill {
   fill: var(--primary-color);
+}
+
+.customer-reviews__container {
+  position: relative;
+}
+
+.arrow-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    left: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 150px;
+  }
+}
+
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  transform: translateY(-50%);
+
+  fill: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    right: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 150px;
+  }
 }
