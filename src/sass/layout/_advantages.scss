@@ -1,8 +1,28 @@
 .section__advantages {
   background-color: var(--main-background-color);
 }
+.advantages {
+  @media screen and (min-width: 768px) {
+    & {
+      @include centred;
+      margin: 0 -30px;
+    }
+  }
+}
 .advantages__item {
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 0;
+      padding: 0 30px;
+      width: 33.333%;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: '';
@@ -11,18 +31,49 @@
     height: 50px;
     margin-bottom: 12px;
   }
+  @media screen and (min-width: 768px) {
+    &::before {
+      margin-bottom: 36px;
+    }
+  }
 
   &:nth-child(1):before {
     background-image: url(../images/icon/icon1@1x.png);
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &:nth-child(1):before {
+      background-image: url(../images/icon/icon1@2x.png);
+      background-size: 50px;
+    }
+  }
+
   &:nth-child(2):before {
     background-image: url(../images/icon/icon2@1x.png);
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &:nth-child(2):before {
+      background-image: url(../images/icon/icon2@2x.png);
+      background-size: 50px;
+    }
+  }
+
   &:nth-child(3):before {
     background-image: url(../images/icon/icon3@1x.png);
   }
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &:nth-child(3):before {
+      background-image: url(../images/icon/icon3@2x.png);
+      background-size: 50px;
+    }
   }
 }
 .advantages__accent {
@@ -30,9 +81,20 @@
   font-family: Titan One;
   @include font($fw: 400, $fz: 36px, $lh: 41px, $ls: 0.04em, $tt: uppercase);
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    & {
+      @include font($fz: 48px, $lh: 55px);
+    }
+  }
 }
 .advantages__text {
-  font-weight: 700;
-  font-size: 12px;
+  @include font($fw: 700, $fz: 12px, $lh: 20px);
   color: var(--minor-text-color);
+
+  @media screen and (min-width: 768px) {
+    & {
+      @include font($fw: 700, $fz: 14px, $lh: 24px);
+    }
+  }
 }
