@@ -16,6 +16,13 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+
+    <!--  ДЛЯ СЛАЙДЕРА -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -23,7 +30,6 @@
     </header>
     <main>
       <include src="./partials/hero.html"></include>
-      <include src="./partials/btn.html"></include>
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
@@ -36,5 +42,23 @@
     </footer>
 
     <script src="./index.js"></script>
+
+    <!-- ДЛЯ СЛАЙДЕРА -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $('.single-item').slick({
+        arrows: true,
+        prevArrow: '.arrow-prev',
+        nextArrow: '.arrow-next',
+      });
+    </script>
   </body>
 </html>

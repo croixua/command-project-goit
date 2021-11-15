@@ -1,0 +1,113 @@
+:root {
+  --menu-background-color: #e17992;
+}
+
+.mobile-menu {
+  display: block;
+  z-index: 999;
+  position: fixed;
+  padding: 60px 0px;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  min-width: 250px;
+  @media screen and (min-width: 768px) {
+    width: 250px;
+  }
+
+  background-color: var(--menu-background-color);
+  transform: translate(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-open {
+    transform: translate(0%);
+  }
+}
+
+// .buy-now {
+//   display: block;
+//   padding: 20px;
+// }
+
+// .buy-now__button {
+//   display: block;
+//   margin: auto;
+//   width: 209px;
+//   height: 44px;
+//   border-radius: 22px;
+//   border-style: none;
+//   color: var(--primary-color);
+//   background-color: var(--third-color);
+// }
+.buy-now {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.mobile-menu__item {
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: 12px 20px;
+  color: var(--third-color);
+  @include font(700, 14px, 18px);
+
+  // transition-property: color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+  }
+  &--current {
+    color: var(--primary-color);
+    // position: relative;
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 4px;
+
+    //   background-color: var(--accent-color);
+    //   border-radius: 2px;
+    // }
+  }
+}
+
+.mobile-menu-btn {
+  display: block;
+  padding: 13px;
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  fill: var(--third-color);
+  // transition-property: fill;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-color);
+  }
+}
+.mobile-menu-btn--red {
+  fill: var(--primary-color);
+}
