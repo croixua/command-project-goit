@@ -91,6 +91,9 @@
 
 .contacts-card__tel-mail {
   margin-top: 25px;
+}
+
+.contacts-card__tel-mail-link {
   @include font(500, 12px, 18px, 0);
   color: var(--main-text-color);
 }
