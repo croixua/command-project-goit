@@ -140,6 +140,10 @@
   fill: var(--primary-color);
 }
 
+.customer-reviews__ellipse-fill {
+  fill: #d9d9d9;
+}
+
 .customer-reviews__container {
   position: relative;
 }
@@ -150,6 +154,8 @@
   left: 20px;
 
   transform: translateY(-50%);
+
+  fill: var(--primary-color);
 
   @media screen and (min-width: 768px) {
     left: 50px;
