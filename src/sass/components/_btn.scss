@@ -19,6 +19,7 @@
   &:active,
   &:focus {
     background: var(--accent-first-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -102,6 +103,7 @@
   &:active,
   &:focus {
     background: var(--accent-first-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -126,6 +128,11 @@
   }
   & .button__arrow--margin {
     margin-left: 11px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .button__contacts--white {
