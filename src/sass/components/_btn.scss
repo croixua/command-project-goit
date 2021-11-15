@@ -64,14 +64,14 @@
   background-color: var(--third-color);
 }
 
-//
+//button Products
+
 .button__products {
   display: block;
   width: 40px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
-
   border-radius: 50px;
   border: 0px solid transparent;
   background-color: var(--third-color);
@@ -108,34 +108,32 @@
 
 .button__contacts {
   display: inline-block;
-  padding: 13px 0;
+  padding: 14px 17px;
   width: 162px;
   text-align: center;
   align-items: baseline;
-
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.31;
-
+  line-height: 16px;
   cursor: pointer;
-
   border-radius: 22px;
   border: 0px solid transparent;
   background-color: var(--primary-color);
   color: var(--third-color);
-
   & .button__arrow {
     fill: var(--third-color);
   }
   & .button__arrow--margin {
-    margin-left: 8px;
+    margin-left: 11px;
   }
 }
-
 .button__contacts--white {
   color: var(--primary-color);
   background-color: var(--third-color);
   & .button__arrow {
     fill: var(--primary-color);
+  }
+  & .button__arrow--margin {
+    margin-left: 15px;
   }
 }
