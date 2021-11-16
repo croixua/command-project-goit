@@ -12,6 +12,9 @@
   padding: 6px 0;
   width: 200px;
   height: 50px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .nav {
@@ -37,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
-    margin-left: 291px;
+    margin-left: auto;
   }
 }
 
