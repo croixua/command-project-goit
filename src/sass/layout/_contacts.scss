@@ -6,7 +6,11 @@
   );
   padding-bottom: 113px;
   @media screen and (min-width: 768px) {
-    background: var(--third-color);
+    background: linear-gradient(
+      to bottom,
+      var(--third-color) 9.5%,
+      var(--main-background-color) 9.5%
+    );
     padding-bottom: 165px;
   }
   @media screen and (min-width: 1280px) {
