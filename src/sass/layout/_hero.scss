@@ -153,6 +153,9 @@
 .hero__item {
   position: relative;
   margin-bottom: 13px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .hero__item::before {
   content: '';
