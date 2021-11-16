@@ -220,7 +220,9 @@
 }
 
 .products-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .products-list__item {
   margin-left: auto;
