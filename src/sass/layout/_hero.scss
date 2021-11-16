@@ -4,12 +4,35 @@
   height: 502px;
   background-color: #ffb8ca;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+}
+.hero__girl {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    right: 34px;
+    width: 168px;
+    height: 133px;
+  }
 }
 .hero__picture {
   position: absolute;
   bottom: 0;
-  right: 32px;
   z-index: auto;
+  @media screen and (max-width: 767px) {
+    right: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 378px;
+    width: 143px;
+    height: 336px;
+  }
 }
 .hero__circle {
   position: absolute;
@@ -21,12 +44,23 @@
   background: var(--secondary-color);
   overflow: hidden;
   z-index: auto;
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    left: 307px;
+    top: 31px;
+  }
 }
 
 .hero__panel {
   position: absolute;
   top: 40%;
   z-index: auto;
+  width: 218px;
+  @media screen and (min-width: 768px) {
+    top: 28%;
+    width: 163px;
+  }
 }
 .hero__title {
   font-family: Titan One;
@@ -35,8 +69,12 @@
   line-height: 1.15;
   text-transform: uppercase;
   color: var(--third-color);
-  width: 218px;
+
   margin-bottom: 19px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.13;
+  }
 }
 
 .hero__title--second {
@@ -47,12 +85,90 @@
   line-height: 0.96;
   text-transform: uppercase;
   color: var(--primary-color);
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.9;
+  }
 }
 
 .hero__container {
-  display: none;
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 114px;
+}
+.hero__text {
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--third-color);
+}
+
+.button__hero {
+  display: block;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+
+  padding-bottom: 7px;
+  border-radius: 50%;
+  border: 0px solid transparent;
+  background-color: var(--third-color);
 }
 
 .hero__list {
-  display: none;
+  position: absolute;
+  top: 94px;
+  right: 34px;
+  width: 51px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__item {
+  position: relative;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 13px;
+}
+
+.hero__item--second {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0;
+  color: var(--third-color);
+}
+
+.hero__wheel {
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  float: left;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--third-color);
 }
