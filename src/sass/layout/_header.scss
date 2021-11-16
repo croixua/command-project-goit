@@ -10,6 +10,8 @@
 
 .logo {
   padding: 6px 0;
+  width: 200px;
+  height: 50px;
 }
 
 .nav {
@@ -34,7 +36,9 @@
 .header__buttons {
   display: flex;
   justify-content: space-between;
-  margin-left: 291px;
+  @media screen and (min-width: 768px) {
+    margin-left: 291px;
+  }
 }
 
 .mobile__button--open {

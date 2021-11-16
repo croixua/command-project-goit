@@ -1,14 +1,6 @@
 <section class="hero" id="hero">
     <div class="container">
-                        <picture>
-                            <source srcset="./images/desk/hero-girl@1x.png 1x,
-                                            ./images/desk/hero-girl@2x.png 2x"
-                                media="(min-width: 1200px)" />
-                            <source srcset="./images/tab/hero-girl@1x.png 1x,
-                                            ./images/tab/hero-girl@2x.png 2x"
-                                media="(min-width: 768px)" /> 
-                            <img class="hero__girl" src="./images/tab/hero-girl@1x.png" alt="girl" width="170px" height="410px">
-                        </picture>
+        <div class="hero__block">
                 <div class="hero__circle"></div>
                                 <picture>
                                     <source srcset="./images/desk/hero-icecream@1x.png 1x,
@@ -19,6 +11,15 @@
                                                                                     ./images/mob/slider-pic7@2x.png 2x" media="(max-width: 767px)" />
                                     <img class="hero__picture" src="./images/tab/hero-icecream@1x.png" alt="ice-cream" width="170px" height="410px">
                                 </picture>
+                                </div>
+                                                        <picture>
+                                                            <source srcset="./images/desk/hero-girl@1x.png 1x,
+                                                                                                    ./images/desk/hero-girl@2x.png 2x" media="(min-width: 1200px)" />
+                                                            <source srcset="./images/tab/hero-girl@1x.png 1x,
+                                                                                                    ./images/tab/hero-girl@2x.png 2x" media="(min-width: 768px)" />
+                                                            <img class="hero__girl" src="./images/tab/hero-girl@1x.png" alt="girl" width="170px" height="410px">
+                                                        </picture>
+                                                        
         <div class="hero__panel">
         <h1 class="hero__title">
             ICE CREAM MADE WITH
@@ -46,13 +47,10 @@
         </div>
         <ul class="hero__list">
             <li class="hero__item"> 
-                <div class="hero__wheel"></div>
-                16 <span class="hero__item--second">cafe</span>
-       
+                <p class="hero__item--number">16 <span class="hero__item--text">cafe</span>
             </li>
-            <li class="hero__item"> 
-                <div class="hero__wheel"></div>
-                23 <span class="hero__item--second">food truck</span></li>
+            <li class="hero__item"> <p class="hero__item--number">23 <span class="hero__item--text">food truck</span></p> 
+                </li>
         </ul>
     </div>
 </section>

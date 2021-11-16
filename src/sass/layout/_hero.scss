@@ -8,10 +8,22 @@
     height: 399px;
   }
 }
+.hero__block {
+  position: relative;
+  width: 100%;
+  height: 502px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 399px;
+  }
+}
 .hero__girl {
   position: absolute;
   bottom: 0;
-  z-index: 5;
+  z-index: auto;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -29,7 +41,7 @@
     right: 32px;
   }
   @media screen and (min-width: 768px) {
-    left: 378px;
+    right: 247px;
     width: 143px;
     height: 336px;
   }
@@ -39,15 +51,17 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  right: -62px;
   top: 83px;
   background: var(--secondary-color);
   overflow: hidden;
   z-index: auto;
+  @media screen and (max-width: 767px) {
+    right: -62px;
+  }
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
-    left: 307px;
+    right: 137px;
     top: 31px;
   }
 }
@@ -138,6 +152,23 @@
 
 .hero__item {
   position: relative;
+  margin-bottom: 13px;
+}
+.hero__item::before {
+  content: '';
+  position: absolute;
+  z-index: auto;
+  top: -9%;
+  right: -15%;
+  float: left;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--third-color);
+}
+
+.hero__item--number {
+  position: relative;
   font-family: Titan One;
   font-style: normal;
   font-weight: 400;
@@ -147,10 +178,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-color);
-  margin-bottom: 13px;
 }
-
-.hero__item--second {
+.hero__item--text {
   display: block;
   font-family: DM Sans;
   font-style: normal;
@@ -162,13 +191,13 @@
   color: var(--third-color);
 }
 
-.hero__wheel {
-  position: absolute;
-  top: -10%;
-  right: -20%;
-  float: left;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--third-color);
-}
+// .hero__wheel {
+//   position: absolute;
+//   top: -10%;
+//   right: -20%;
+//   float: left;
+//   width: 16px;
+//   height: 16px;
+//   border-radius: 50%;
+//   background-color: var(--third-color);
+// }
