@@ -8,6 +8,12 @@
       margin: 0 -30px;
     }
   }
+  @media screen and (min-width: 1280px) {
+    & {
+      @include centred;
+      margin: 0 -15px;
+    }
+  }
 }
 .advantages__item {
   margin-bottom: 40px;
@@ -17,6 +23,12 @@
       margin-bottom: 0;
       padding: 0 30px;
       width: 33.333%;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      padding: 0 15px;
     }
   }
 
@@ -34,6 +46,11 @@
   @media screen and (min-width: 768px) {
     &::before {
       margin-bottom: 36px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &::before {
+      margin-bottom: 40px;
     }
   }
 
@@ -85,6 +102,11 @@
   @media screen and (min-width: 768px) {
     & {
       @include font($fz: 48px, $lh: 55px);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & {
+      margin-bottom: 15px;
     }
   }
 }
