@@ -1,5 +1,26 @@
 .section__about {
   background-color: var(--main-background-color);
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/mob/howit-bkg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 83%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mob/howit-bkg@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/desk/howit-bkg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/howit-bkg@2x.png');
+    }
+  }
+  
 }
 
 .about__pretitle {
@@ -38,15 +59,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-  @media screen and (min-width: 1280px) {
-    background-image: url('../images/desk/howit-bkg@1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/desk/howit-bkg@1x.png');
-    }
-  }
 }
 
 .about__img {
@@ -67,17 +79,18 @@
     padding-top: 50px;
   }
 }
-.about__list {
-  @media screen and (max-width: 767px) {
-    background-image: url('../images/mob/howit-bkg@1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/mob/howit-bkg@2x.png');
-    }
-  }
-}
+
+// .about__list {
+//   // @media screen and (max-width: 767px) {
+//   //   background-image: url('../images/mob/howit-bkg@1x.png');
+//   //   background-size: contain;
+//   //   background-repeat: no-repeat;
+//   //   background-position: 50% 50%;
+//   //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   //     background-image: url('../images/mob/howit-bkg@2x.png');
+//   //   }
+//   // }
+// }
 
 .about__item {
   &:not(:last-child) {
@@ -99,39 +112,44 @@
   }
   @media screen and (min-width: 1280px) {
     @include font($fw: 500, $fz: 14px, $lh: 27px);
+    width: 420px;
   }
 }
 .about--dark {
   color: #000;
 }
 
-.wrap__btn {
+
+// .about__btn {
+//   width: 176px;
+//   height: 44px;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.28;
+//   text-align: center;
+//   border-radius: 22px;
+//   border: none;
+//   background-color: #fff;
+//   color: var(--primary-color);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--accent-first-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     color: var(--primary-color);
+//   }
+// }
+
+.about__btnn{
+  height: 44px;
   @media screen and (max-width: 767px) {
+    display: block;
+    margin: 0 auto;
     margin-top: 30px;
-    @include centred();
   }
   @media screen and (min-width: 768px) {
     margin-top: 62px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 45px;
-  }
-}
-.about__btn {
-  width: 176px;
-  height: 44px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-  text-align: center;
-  border-radius: 22px;
-  border: none;
-  background-color: #fff;
-  color: var(--primary-color);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-first-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: var(--primary-color);
-  }
+  } 
 }
