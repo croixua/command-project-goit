@@ -26,10 +26,28 @@
 }
 
 .nav__list {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
-.button {
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+.nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--third-color);
+  &--current {
+    color: var(--primary-color);
+  }
+}
+.button__header—big {
   margin-left: 30px;
   @media screen and (max-width: 767px) {
     display: none;
@@ -39,7 +57,7 @@
 .header__buttons {
   display: flex;
   justify-content: space-between;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: auto;
   }
 }
@@ -58,5 +76,8 @@
   &:focus {
     fill: var(--accent-first-color);
     cursor: pointer;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
