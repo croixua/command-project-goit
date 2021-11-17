@@ -1,0 +1,31 @@
+.contact-map {
+  display: block;
+  z-index: 999;
+  position: fixed;
+  padding: 20px;
+  top: 10%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  min-width: 250px;
+
+  @media screen and (min-width: 768px) {
+    left: 25%;
+    width: 50vw;
+  }
+
+  background-color: var(--menu-background-color);
+  transform: translateY(150%);
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-open {
+    transform: translateY(0%);
+  }
+}
+
+.contact-map__box {
+  width: 100%;
+  height: calc(100% - 60px);
+  border: 0;
+}
