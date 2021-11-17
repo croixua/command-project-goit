@@ -70,6 +70,7 @@
     @include font(700, 16px, 28px, 0.04em);
   }
 }
+
 .products-list__thumb--pink::before {
   content: '';
   position: absolute;
