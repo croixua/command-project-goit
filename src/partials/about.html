@@ -1,4 +1,4 @@
-<section class="section section__about"  id="about">
+<section class="section section__about" id="about">
   <div class="container">
     <p class="section__pretitle about__pretitle">tradition and love</p>
     <h2 class="section__title about__title">how it’s made?</h2>
@@ -42,11 +42,48 @@
             <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
           </li>
         </ul>
-        <button type="button" class="about__btnn button__about">
+        <button type="button" class="about__btnn button__about" data-modal-open>
           Read more<svg class="button__arrow button__arrow--margin" width="6" height="10">
             <use href="./images/icons.svg#icon-button-arrow-1"></use>
           </svg>
         </button>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal section__about">
+        <h2 class="modal__title">Ice cream with condensed milk and strawberries</h2>
+        <p class="about__modal-tittle">Ingredients</p>
+        <ul class="about__wrap-text">
+          <li>
+            <p class="about__modal-text">480 ml whipping cream;</p>
+          </li>
+          <li>
+            <p class="about__modal-text">380 g of condensed milk;</p>
+          </li>
+          <li>
+            <p class="about__modal-text">150-200 g strawberries.</p>
+          </li>
+        </ul>
+
+        <p class="about__modal-tittle">Preparation</p>
+        <ul>
+          <li>
+            <p class="about__modal-text">
+              Beat the cold cream with a mixer until creamy. Add condensed milk and punch again
+              until smooth.
+            </p>
+          </li>
+          <li>
+            <p class="about__modal-text">
+              Cut the strawberries into small pieces, place in the creamy mass and stir. Place ice
+              cream in a wide dish, cover with plastic wrap or a lid and place in the freezer for
+              3-4 hours.
+            </p>
+          </li>
+        </ul>
+        <button type="button" class="modal__btn--close" data-modal-close>let's cook</button>
       </div>
     </div>
   </div>
