@@ -43,6 +43,9 @@
   font-size: 16px;
   line-height: 1.31;
   color: var(--third-color);
+  &--current {
+    color: var(--primary-color);
+  }
 }
 .button__header—big {
   margin-left: 30px;
