@@ -1,5 +1,4 @@
  <div class="container header__container">
-        <nav class="nav">
             <a href="./index.html" class="logo">
                 <picture>
                         <source srcset="./images/header-logo@1x.png 1x,
@@ -7,7 +6,7 @@
                     <img src="./images/header-logo@1x.png" alt="logo">
                 </picture>
             </a>
-            <ul class="nav__list">
+            <ul class="nav">
                 <li class="nav__item"><a href="" class="nav__link nav__link--current">Home</a></li>
                 <li class="nav__item"><a href="" class="nav__link ">About us</a></li>
                 <li class="nav__item"><a href="" class="nav__link ">How it's made?</a></li>
@@ -17,14 +16,21 @@
             <div class="header__buttons">
             <button aria-expanded="false" aria-controls="mobile" type="button"
                 class="mobile__button--open" data-mobilemenu-open>
-                <svg height="12px" width="20px">
+                <svg height="12" width="20">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
             
-            <button class="button button__header—big" type="button">Buy now<svg class="button__arrow button__arrow--margin" width="4" height="8">
-                    <use href="./images/icons.svg#icon-button-arrow-1"></use>
-                </svg> </button>
+            <div class="header--hover">
+                <button class="button button__header—big" type="button">Buy now<svg class="button__arrow button__arrow--margin"
+                        width="4" height="8">
+                        <use href="./images/icons.svg#icon-button-arrow-1"></use>
+                    </svg> </button>
+                <div class="header__tooltip">
+                    <picture>
+                        <source srcset="./images/catx1.png 1x, ./images/catx2.png 2x" />
+                        <img src="./images/catx1.png" alt="cat" />
+                    </picture>
+                </div>
             </div>
-        </nav>
     </div>

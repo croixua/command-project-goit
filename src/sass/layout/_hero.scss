@@ -7,30 +7,49 @@
   @media screen and (min-width: 768px) {
     height: 399px;
   }
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
 }
 .hero__block {
   position: relative;
   width: 100%;
   height: 502px;
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 399px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 665px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
 .hero__girl {
   position: absolute;
   bottom: 0;
+  right: 0;
   z-index: auto;
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
-    right: 34px;
+    left: 566px;
     width: 168px;
     height: 133px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 878px;
+    width: 293px;
+    height: 232px;
   }
 }
 .hero__picture {
@@ -38,12 +57,17 @@
   bottom: 0;
   z-index: auto;
   @media screen and (max-width: 767px) {
-    right: 32px;
+    left: 117px;
   }
   @media screen and (min-width: 768px) {
-    right: 247px;
+    left: 378px;
     width: 143px;
     height: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 594px;
+    width: 236px;
+    height: 557px;
   }
 }
 .hero__circle {
@@ -55,25 +79,71 @@
   background: var(--secondary-color);
   overflow: hidden;
   z-index: auto;
+  animation-name: 'pulse_animation';
+  animation-duration: 500ms;
+  transform-origin: 70% 70%;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  animation: pulsate 3s ease-out;
+  animation-iteration-count: 3;
+  @keyframes pulsate {
+    0% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: scale(1.1, 1.1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes pulse_animation {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+
   @media screen and (max-width: 767px) {
-    right: -62px;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    top: 83px;
   }
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
-    right: 137px;
+    left: 307px;
     top: 31px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    left: 475px;
+    top: 52px;
   }
 }
 
 .hero__panel {
   position: absolute;
-  top: 40%;
+  top: 193px;
   z-index: auto;
   width: 218px;
   @media screen and (min-width: 768px) {
-    top: 28%;
+    top: 112px;
     width: 163px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 156px;
+    width: 277px;
   }
 }
 .hero__title {
@@ -87,7 +157,9 @@
   margin-bottom: 19px;
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 1.13;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
   }
 }
 
@@ -96,22 +168,31 @@
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  line-height: 0.96;
   text-transform: uppercase;
   color: var(--primary-color);
   @media screen and (min-width: 768px) {
     font-size: 34px;
-    line-height: 0.9;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+
+.hero__button:not(:last-child) {
+  @media screen and (min-width: 1280px) {
+    margin-right: 20px;
   }
 }
 
 .hero__container {
   position: absolute;
   bottom: 28px;
-  left: 24px;
   display: flex;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
   }
 }
 .hero__thumb {
@@ -119,34 +200,32 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 114px;
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+  }
 }
 .hero__text {
   font-size: 8px;
   line-height: 1.5;
   letter-spacing: 0;
   color: var(--third-color);
-}
-
-.button__hero {
-  display: block;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin-right: auto;
-
-  padding-bottom: 7px;
-  border-radius: 50%;
-  border: 0px solid transparent;
-  background-color: var(--third-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
 }
 
 .hero__list {
   position: absolute;
   top: 94px;
-  right: 34px;
   width: 51px;
+  right: 34px;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 156px;
+    width: 77px;
+    right: 115px;
   }
 }
 
@@ -163,11 +242,14 @@
   z-index: auto;
   top: -9%;
   right: -15%;
-  float: left;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: var(--third-color);
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero__item--number {
@@ -181,6 +263,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+  }
 }
 .hero__item--text {
   display: block;
@@ -192,15 +277,7 @@
   text-align: right;
   letter-spacing: 0;
   color: var(--third-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
 }
-
-// .hero__wheel {
-//   position: absolute;
-//   top: -10%;
-//   right: -20%;
-//   float: left;
-//   width: 16px;
-//   height: 16px;
-//   border-radius: 50%;
-//   background-color: var(--third-color);
-// }
