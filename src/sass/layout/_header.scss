@@ -84,3 +84,19 @@
     display: none;
   }
 }
+.header__tooltip {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    transform: translate(100%, 85%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: auto;
+    .header--hover:hover & {
+      transform: translate(13%, 85%);
+    }
+  }
+}
