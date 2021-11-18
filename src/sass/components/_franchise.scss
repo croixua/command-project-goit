@@ -22,6 +22,10 @@
     border-radius: 22px;
   }
 
+  @media screen and (min-width: 1280px) {
+    height: 560px;
+  }
+
   background-color: #ffb8ca;
   transition-property: transform;
   transition-duration: 500ms;
