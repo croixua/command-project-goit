@@ -9,7 +9,7 @@
     contactMapOpen.setAttribute('aria-expanded', !isMapOpen);
     contactMapClose.setAttribute('aria-expanded', isMapOpen);
     contactMap.classList.toggle('is-open');
-    contactMapOpen.classList.toggle('visually-hidden'); //прячем гамбургер при открывании меню
+    // contactMapOpen.classList.toggle('visually-hidden'); //прячем гамбургер при открывании меню
  
     const scrollLockMethod = !isMapOpen
       ? 'disableBodyScroll'
